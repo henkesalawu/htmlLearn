@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forms demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <h2>Reddit Search</h2>
+    <form action="https://www.reddit.com/search">
+        <p>
+            <label for="query">Enter query:</label>
+            <input type="text" name="q" id="query" placeholder="your query">
+            <button>Search REDDIT</button>
+        </p>
+    </form>
+<!-- Google search-->
+<h2>Google Search</h2>
+    <form action="https://www.google.com/search">
+        <p>
+            <label for="search">Search for:</label>
+            <input type="text" name="q" id="search" placeholder="search keyword">
+            <button>Search Google!</button>
+        </p>
+    </form>
+
+    <!-- Youtube search-->
+    <h2>Youtube Search</h2>
+    <form action="https://www.youtube.com/results">
+        <p>
+            <label for="search">Search for:</label>
+            <input type="text" name="search_query" id="search" placeholder="keyword">
+            <button>Search Youtube!</button>
+        </p>
+    </form>
+
+     <!--Chechbox-->
+     <h2>Checkbox</h2>
+     <form action="/birds?">
+         <p>
+             <input type="checkbox" name="agree_check" id="yes" checked>
+             <label for="yes">Yes</label>
+         </p>
+         <p>
+            <label for="no">No</label>
+            <input type="checkbox" name="agree_check" id="no">
+            <button>Submit</button>
+        </p>
+        <p>
+            <input type="radio" name="check" id="one" value="one">
+            <label for="one">One</label>
+            <input type="radio" name="check" id="two" value="two">
+            <label for="two">Two</label>
+            <input type="radio" name="check" id="three" value="three">
+            <label for="three">Three</label>
+            <button>Submit</button>
+        </p>
+     </form>
+
+     <h2>Dropdown menu</h2>
+     <form action="/birds?">
+             <label for="pets">Choose a pet:</label>
+             <select name="pet" id="pets">
+                <option value="">..Choose a pet..</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat" selected>Cat</option>
+                <option value="Snake"> Snake</option>
+             </select>
+             <button>Submit</button>
+     </form>
+
+     <h2>Volume Range</h2>
+     <form action="/birds?">
+             <label for="volume">Volume:</label>
+             <input type="range" min="0" max="100" value="55" name="volume" id="volume" step="10">
+             <button>Submit</button>
+     </form>
+
+     <h2>Text area</h2>
+     <form action="/birds?">
+             <label for="story">Tell me a story:</label>
+             <br>
+             <p>
+             <textarea id="story" name="story"
+             rows="5" cols="40" placeholder="Once upon a time...">
+        </textarea>
+        </p>
+             <button>Submit</button>
+    <h2> Validations demo</h2>
+    <label for="first">Enter First Name:</label>
+    <input type="text" name="first" id="first" required>
+    <p>
+        <label for="user">Enter Username:</label>
+        <input type="text" name="user" id="user" required minlength="6" maxlength="10">
+    </p>
+    <button>Submit</button>
+     </form>
+    </body>
+</html>
